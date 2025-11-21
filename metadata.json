@@ -1,0 +1,5 @@
+{
+  "name": "Physics: Cliff & Sharks",
+  "description": "A kinematic physics simulation of a laptop falling off a cliff using Three.js and React.",
+  "requestFramePermissions": []
+}

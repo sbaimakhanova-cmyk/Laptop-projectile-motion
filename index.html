@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Physics Lab: Silver Laptop Drop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+        font-family: 'Inter', sans-serif;
+        background: #0f172a;
+      }
+      /* Custom Scrollbar */
+      .custom-scroll::-webkit-scrollbar { width: 6px; }
+      .custom-scroll::-webkit-scrollbar-track { background: rgba(255,255,255,0.05); }
+      .custom-scroll::-webkit-scrollbar-thumb { background: #475569; border-radius: 3px; }
+      .custom-scroll::-webkit-scrollbar-thumb:hover { background: #64748b; }
+
+      /* Custom Slider Styling */
+      input[type=range] {
+        -webkit-appearance: none;
+        background: transparent;
+      }
+      input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        background: #cbd5e1; /* Silver-300 */
+        cursor: pointer;
+        margin-top: -6px;
+        box-shadow: 0 0 10px rgba(203, 213, 225, 0.5);
+      }
+      input[type=range]::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 4px;
+        background: #334155;
+        border-radius: 2px;
+      }
+      /* MathJax Override */
+      mjx-container { color: #e2e8f0 !important; }
+      
+      /* Tooltip Arrow */
+      .tooltip-arrow {
+        position: absolute;
+        bottom: -6px;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+        width: 12px;
+        height: 12px;
+        background: #0f172a; 
+        border-right: 1px solid rgba(6, 182, 212, 0.5); /* cyan-500/50 */
+        border-bottom: 1px solid rgba(6, 182, 212, 0.5);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "three": "https://aistudiocdn.com/three@^0.181.2"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
